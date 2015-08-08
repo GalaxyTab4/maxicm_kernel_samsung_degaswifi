@@ -202,6 +202,12 @@ static inline void suspend_test_finish(const char *label) {}
 extern int pm_notifier_call_chain(unsigned long val);
 #endif
 
+#ifdef CONFIG_EARLYSUSPEND
+/* kernel/power/earlysuspend.c */
+void request_suspend_state(suspend_state_t state);
+suspend_state_t get_suspend_state(void);
+#endif
+
 #ifdef CONFIG_HIGHMEM
 int restore_highmem(void);
 #else

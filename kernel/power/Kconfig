@@ -317,6 +317,14 @@ config CPU_PM
 	bool
 	depends on SUSPEND || CPU_IDLE
 
+config EARLYSUSPEND
+	bool "Early suspend"
+	depends on WAKELOCK
+	default y
+	---help---
+	  Call early suspend handlers when the user requested sleep state
+	  changes.
+
 config SUSPEND_TIME
 	bool "Log time spent in suspend"
 	---help---

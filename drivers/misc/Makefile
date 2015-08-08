@@ -57,4 +57,5 @@ obj-$(CONFIG_SRAM)		+= sram.o
 obj-$(CONFIG_SD8XXX_RFKILL)	+= sd8x_rfkill.o
 obj-y				+= sec-debug/
 obj-$(CONFIG_MRVL_REGS_ADDR)	+= regs-addr.o
+obj-$(CONFIG_GENERIC_BLN)	+= bln.o
 obj-$(CONFIG_MMP_GPS)		+= mmp_gps.o
